@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ortsweihnachtsbaum",
+    "name": "Ortsweihnachtsbaum Britz",
+    "seit": 2009,
+    "beschreibung": "Eberswalder Straße / Ecke Heegermühler Straße. 2024 zum 15. Mal gestaltet. Heimatkundeverein + FFW, unterstützt durch Gemeinde Britz, GIGALIFT-Vermietung GmbH, Familie Günther (Strom).",
+    "eventIds": [
+      "baum-2009",
+      "baum-2024"
+    ]
+  },
+  {
+    "id": "wichtelfest-familienadvent",
+    "name": "Vom Wichtelfest zum Familienadvent",
+    "seit": 2018,
+    "beschreibung": "Das Britzer Wichtelfest (bis 2018) wurde 2019 mit einer „kreativen Pause“ beendet. 2023 entstand das erste Britzer Adventsfest, 2024 der erste „Britzer Familienadvent“ – eine neue Tradition, die 2025 und 2026 fortgeführt wird.",
+    "eventIds": [
+      "wichtelfest-2018",
+      "wichtelfest-pause-2019",
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025",
+      "familienadvent-2026"
+    ]
+  },
+  {
+    "id": "neujahrsfeuer",
+    "name": "Britzer Neujahrsfeuer",
+    "seit": 2026,
+    "beschreibung": "Traditionelles Neujahrsfeuer des Feuerwehrfördervereins Britz-Kolonie e. V. – 2026 in neuem Format mit Neujahrslichterumzug von der KITA zum Feuerwehrgerätehaus.",
+    "eventIds": [
+      "neujahrsfeuer-2026"
+    ]
+  },
+  {
+    "id": "weihnachtssingen",
+    "name": "Weihnachtssingen auf dem Bahnhofsvorplatz",
+    "seit": 2025,
+    "beschreibung": "Neue Tradition in Britz – Weihnachtslieder singen auf dem Bahnhofsvorplatz, mit Zelt, Lichterketten und Glühwein. 2025 erstmals, 2026 geplant.",
+    "eventIds": [
+      "weihnachtssingen-2025",
+      "weihnachtssingen-2026"
+    ]
+  },
+  {
+    "id": "hort-weihnachtsmarkt",
+    "name": "Hort-Weihnachtsmarkt „Britzer Strolche“",
+    "seit": 2021,
+    "beschreibung": "Jährlicher Weihnachtsmarkt des Horts „Britzer Strolche“ – mit Ständen, Tombola, Theater und Weihnachtsmann. Seit 2021.",
+    "eventIds": [
+      "strolche-2021",
+      "strolche-2022",
+      "hort-2023",
+      "hort-2024",
+      "hort-2025"
+    ]
+  },
+  {
+    "id": "martinsfest",
+    "name": "Martinsfest an der Max-Kienitz-Schule",
+    "seit": 2024,
+    "beschreibung": "Laternenwettbewerb und Martinsumzug an der Max-Kienitz-Grundschule – begleitet von der Freiwilligen Feuerwehr Britz und der Polizei, mit musikalischer Umrahmung durch die Spielleute Neuenhagen.",
+    "eventIds": [
+      "martinsfest-2024"
+    ]
+  },
+  {
+    "id": "weihnachtskonzert",
+    "name": "Weihnachtskonzert im Rathaussaal",
+    "seit": 2019,
+    "beschreibung": "Jährliche Tradition: Das Brandenburgische Konzertorchester Eberswalde gibt in der Adventszeit ein Weihnachtskonzert im Rathaussaal Britz – mit Solistinnen und weihnachtlichem Programm.",
+    "eventIds": [
+      "konzert-2019",
+      "konzert-2020",
+      "konzert-2022",
+      "konzert-2023"
+    ]
+  },
+  {
+    "id": "adventsgestecke",
+    "name": "Adventsgestecke basteln an der Grundschule",
+    "seit": 2023,
+    "beschreibung": "Traditionelles Adventsgesteck-Basteln an der Max-Kienitz-Grundschule – organisiert vom Förderverein, mit Unterstützung von Eltern, Großeltern und dem Seniorenclub.",
+    "eventIds": [
+      "adventsgestecke-2023",
+      "adventszauber-2025"
+    ]
+  }
+]

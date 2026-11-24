@@ -1,0 +1,30 @@
+{
+  "advent": {
+    "label": "Adventszeit",
+    "icon": "kerze"
+  },
+  "markt": {
+    "label": "Märkte & Feste",
+    "icon": "markt"
+  },
+  "konzert": {
+    "label": "Musik & Konzerte",
+    "icon": "musik"
+  },
+  "senioren": {
+    "label": "Senioren",
+    "icon": "herz"
+  },
+  "kinder": {
+    "label": "Kinder & Schule",
+    "icon": "kind"
+  },
+  "tradition": {
+    "label": "Traditionen",
+    "icon": "baum"
+  },
+  "weihnachtsmann": {
+    "label": "Weihnachtsmann & Co.",
+    "icon": "sack"
+  }
+}

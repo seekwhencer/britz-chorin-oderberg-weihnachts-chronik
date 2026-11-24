@@ -1,0 +1,99 @@
+/* 01-tokens.css — Scoped design tokens (Light + Dark) */
+
+.theme-xmas {
+  /* === Light Mode: Cozy Nordic Snow === */
+  --xmas-bg-primary: #FAF7F2;
+  --xmas-bg-secondary: #F2ECE1;
+  --xmas-bg-elevated: #FFFFFF;
+  --xmas-bg-subtle: #EAE2D3;
+
+  --xmas-text-primary: #1C1917;
+  --xmas-text-secondary: #57534E;
+  --xmas-text-muted: #78716C;
+  --xmas-text-inverse: #FAF7F2;
+
+  --xmas-red-primary: #B91C1C;
+  --xmas-red-hover: #991B1B;
+  --xmas-red-soft: #FEE2E2;
+
+  --xmas-green-primary: #14532D;
+  --xmas-green-hover: #166534;
+  --xmas-green-soft: #DCFCE7;
+
+  --xmas-gold-accent: #D97706;
+  --xmas-gold-light: #FEF3C7;
+  --xmas-gold-glow: rgba(245, 158, 11, 0.35);
+
+  --xmas-status-error: #DC2626;
+  --xmas-status-success: #15803D;
+  --xmas-status-info: #0369A1;
+
+  --xmas-font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --xmas-font-sans: 'Figtree', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --xmas-radius-sm: 6px;
+  --xmas-radius-md: 12px;
+  --xmas-radius-lg: 18px;
+  --xmas-radius-pill: 9999px;
+
+  --xmas-border: #E7E0D5;
+  --xmas-border-strong: #D6CCC2;
+  --xmas-shadow-sm: 0 2px 8px rgba(28, 25, 23, 0.05);
+  --xmas-shadow-card: 0 6px 24px -4px rgba(28, 25, 23, 0.08);
+  --xmas-shadow-modal: 0 20px 50px rgba(28, 25, 23, 0.22);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.65rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 3rem;
+  --space-11: 4rem;
+  --space-12: 5rem;
+
+  --fs-3xs: 0.5rem;
+  --fs-2xs: 0.625rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.8rem;
+  --fs-2xl: 3.5rem;
+  --fs-3xl: 5.5rem;
+}
+
+.theme-xmas.dark,
+[data-theme="dark"] .theme-xmas {
+  /* === Dark Mode: Midnight Winter Sky === */
+  --xmas-bg-primary: #0B1120;
+  --xmas-bg-secondary: #131C31;
+  --xmas-bg-elevated: #1E293B;
+  --xmas-bg-subtle: #172033;
+
+  --xmas-text-primary: #F8FAFC;
+  --xmas-text-secondary: #94A3B8;
+  --xmas-text-muted: #6f7c8f;
+  --xmas-text-inverse: #0B1120;
+
+  --xmas-red-primary: #c73131;
+  --xmas-red-hover: #EF4444;
+  --xmas-red-soft: rgba(220, 38, 38, 0.18);
+
+  --xmas-green-primary: #15803D;
+  --xmas-green-hover: #16A34A;
+  --xmas-green-soft: rgba(20, 83, 45, 0.35);
+
+  --xmas-gold-accent: #F59E0B;
+  --xmas-gold-light: rgba(245, 158, 11, 0.15);
+  --xmas-gold-glow: rgba(245, 158, 11, 0.1);
+
+  --xmas-border: rgba(248, 250, 252, 0.12);
+  --xmas-border-strong: rgba(248, 250, 252, 0.22);
+  --xmas-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --xmas-shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --xmas-shadow-modal: 0 24px 60px rgba(0, 0, 0, 0.65);
+}

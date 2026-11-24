@@ -1,0 +1,83 @@
+/* 07-responsive.css — Breakpoints */
+
+@media (max-width: 720px) {
+  .xmas-navbar {
+    padding: var(--space-3) var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .navbar__brand span {
+    display: none;
+  }
+
+  .navbar__links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .navbar__links a {
+    font-size: var(--fs-xs);
+    padding: var(--space-2) var(--space-2);
+  }
+
+  .theme-toggle__label {
+    display: none;
+  }
+
+  .theme-toggle {
+    padding: var(--space-2);
+  }
+
+  .app-shell {
+    padding: var(--space-6) var(--space-4) var(--space-10);
+  }
+
+  .hero {
+    padding: var(--space-6) var(--space-2) var(--space-8);
+  }
+
+  .countdown__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filterbar {
+    padding: var(--space-4);
+  }
+
+  .events__grid,
+  .akteure-grid,
+  .traditionen-list,
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xmas-modal {
+    padding: var(--space-6);
+  }
+
+  .timeline::before {
+    left: 9px;
+  }
+
+  .timeline__year {
+    padding-left: var(--space-8);
+  }
+
+  .xmas-modal {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .xmas-btn-primary,
+  .hero__actions .xmas-btn-secondary {
+    width: 100%;
+  }
+}

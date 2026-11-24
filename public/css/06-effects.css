@@ -1,0 +1,115 @@
+/* 06-effects.css — Snowfall, LightString, Reduced-Motion */
+
+.xmas-snow-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.xmas-snowflake {
+  position: absolute;
+  top: -1.5rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px rgba(15, 23, 42, 0.25);
+  user-select: none;
+  will-change: transform;
+  animation: xmas-snow-fall linear infinite;
+}
+
+@keyframes xmas-snow-fall {
+  0% {
+    transform: translate3d(0, -5vh, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(25px, 105vh, 0) rotate(360deg);
+  }
+}
+
+@keyframes xmas-twinkle {
+  0% { opacity: 0.65; }
+  100% { opacity: 1; }
+}
+
+/* === LightString (SVG) === */
+.lightstring-host {
+  position: fixed;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  z-index: 115;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.lightstring-host svg {
+  display: block;
+  width: 100%;
+  height: 46px;
+}
+
+.lightstring__wire {
+  fill: none;
+  stroke: var(--xmas-border-strong);
+  stroke-width: 2;
+}
+
+.xmas-bulb {
+  animation: lightstring-twinkle 2.4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.xmas-bulb-glow {
+  animation: lightstring-glow 2.4s ease-in-out infinite;
+}
+
+@keyframes lightstring-twinkle {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+@keyframes lightstring-glow {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.5; }
+}
+
+/* === Reveal (generic) === */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 450ms ease, transform 450ms ease;
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Mandatory Reduced-Motion Guardrail === */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .xmas-snow-container {
+    display: none !important;
+  }
+  .xmas-fairy-lights {
+    animation: none !important;
+  }
+  .xmas-bulb,
+  .xmas-bulb-glow {
+    animation: none !important;
+    opacity: 0.8;
+  }
+  [data-reveal],
+  .timeline__card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .xmas-btn-primary:hover,
+  .xmas-btn-gold:hover {
+    transform: none;
+  }
+}

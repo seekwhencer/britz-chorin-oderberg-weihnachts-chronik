@@ -1,0 +1,122 @@
+/* 05-views.css — View-spezifische Layouts */
+
+/* === Home === */
+.hero {
+  text-align: center;
+  padding: var(--space-10) var(--space-4) var(--space-10);
+  margin-bottom: var(--space-8);
+}
+
+.hero__kicker {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--xmas-gold-accent);
+  margin-bottom: var(--space-3);
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  margin-bottom: var(--space-4);
+}
+
+.hero__lead {
+  font-size: var(--fs-xl);
+  max-width: 55ch;
+  margin: 0 auto var(--space-6);
+}
+
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.hero__meta {
+  font-size: var(--fs-xs);
+  color: var(--xmas-text-muted);
+}
+
+.home-countdown {
+  margin-bottom: var(--space-10);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-highlights {
+  margin-bottom: var(--space-10);
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-5);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-quote {
+  margin-bottom: var(--space-4);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === Events === */
+.events__counter {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--xmas-gold-accent);
+  margin-top: var(--space-2);
+}
+
+.events__controls {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+.events__empty {
+  text-align: center;
+  padding: var(--space-10) var(--space-4);
+  color: var(--xmas-text-secondary);
+}
+
+.events__empty p {
+  margin-bottom: var(--space-4);
+}
+
+/* === Akteure === */
+.akteure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
+
+/* === Traditionen === */
+.traditionen-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+/* === Quellen === */
+.view--quellen .xmas-card {
+  width: 100%;
+}

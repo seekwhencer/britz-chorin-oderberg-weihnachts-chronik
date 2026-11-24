@@ -1,0 +1,461 @@
+[
+  {
+    "id": "heimatverein",
+    "name": "Britzer Heimatkundeverein e. V.",
+    "rolle": "Wichtelfest (bis 2018), Ortsweihnachtsbaum, Glühweinstand, Adventsfest, Familienadvent, Neujahrsfeuer (Süßes)",
+    "person": "Lutz-Werner Marten (1. Vorsitzender)",
+    "eventIds": [
+      "wichtelfest-2018",
+      "baum-2009",
+      "baum-2024",
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025",
+      "neujahrsfeuer-2026"
+    ]
+  },
+  {
+    "id": "ffw-britz",
+    "name": "Freiwillige Feuerwehr Britz (FFW)",
+    "rolle": "Wichtelfest, Ortsweihnachtsbaum, Adventsfest, Familienadvent (Feuerschalen), Hort-Weihnachtsmarkt (Einsatzfahrzeug), Neujahrsfeuer",
+    "person": null,
+    "eventIds": [
+      "wichtelfest-2018",
+      "baum-2009",
+      "baum-2024",
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025",
+      "hort-2025",
+      "neujahrsfeuer-2026"
+    ]
+  },
+  {
+    "id": "seniorenclub",
+    "name": "Seniorenclub Britz e. V.",
+    "rolle": "Weihnachtsfeiern, Adventsfest, Familienadvent, Weihnachtssingen, Stettin-Fahrt",
+    "person": "Marion Conradi (Vorsitzende)",
+    "eventIds": [
+      "senioren-2018",
+      "senioren-2019",
+      "senioren-2021",
+      "senioren-2022",
+      "senioren-2023",
+      "senioren-2024",
+      "senioren-2025",
+      "weihnachtssingen-2025",
+      "stettin-2025",
+      "ortsgruppen-2026",
+      "senioren-2026",
+      "weihnachtssingen-2026"
+    ]
+  },
+  {
+    "id": "fortuna",
+    "name": "FSV Fortuna Britz 90 e. V. / Abteilung Frauengymnastik",
+    "rolle": "Organisation Adventsfest 2023, Familienadvent",
+    "person": "Martina Braun, Marion Conradi",
+    "eventIds": [
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025",
+      "familienadvent-2026"
+    ]
+  },
+  {
+    "id": "strolche",
+    "name": "Hort „Britzer Strolche“",
+    "rolle": "Jährlicher Weihnachtsmarkt (seit 2021)",
+    "person": "C. Mahlendorf",
+    "eventIds": [
+      "strolche-2021",
+      "strolche-2022",
+      "hort-2023",
+      "hort-2024",
+      "hort-2025"
+    ]
+  },
+  {
+    "id": "sonnenzwerge",
+    "name": "Kita „Britzer Sonnenzwerge“",
+    "rolle": "Programmbeiträge, Neujahrsfeuer (Startpunkt Laternenumzug)",
+    "person": null,
+    "eventIds": [
+      "senioren-2025",
+      "neujahrsfeuer-2026"
+    ]
+  },
+  {
+    "id": "maxkienitz",
+    "name": "Grundschule „Max Kienitz“",
+    "rolle": "Programmbeiträge, Adventsgesteck-Basteln",
+    "person": null,
+    "eventIds": [
+      "adventsgestecke-2023",
+      "adventszauber-2025",
+      "martinsfest-2024",
+      "schule-2024"
+    ]
+  },
+  {
+    "id": "linedance",
+    "name": "The Line Dance Britz e. V. / Linedance Friends",
+    "rolle": "Programmbeiträge",
+    "person": null,
+    "eventIds": [
+      "senioren-2018",
+      "adventsfest-2023",
+      "familienadvent-2024"
+    ]
+  },
+  {
+    "id": "gemeinde",
+    "name": "Gemeinde Britz / Amt Britz-Chorin-Oderberg",
+    "rolle": "Veranstalter, Bauhof, Unterstützung",
+    "person": "André Guse (Bürgermeister), Jörg Matthes (Amtsdirektor)",
+    "eventIds": [
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025",
+      "senioren-2021",
+      "senioren-2022",
+      "senioren-2023",
+      "senioren-2024",
+      "senioren-2025",
+      "weihnachtssingen-2025",
+      "familienadvent-2026",
+      "senioren-2026",
+      "weihnachtssingen-2026"
+    ]
+  },
+  {
+    "id": "glueckauf",
+    "name": "Wohnungsgenossenschaft Glück Auf Britz eG",
+    "rolle": "Weihnachtsgrüße, Unterstützung",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "baeckerei-wiese",
+    "name": "Privatbäckerei Wiese",
+    "rolle": "Sponsor (Brötchen, Backwaren)",
+    "person": null,
+    "eventIds": [
+      "strolche-2021",
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025"
+    ]
+  },
+  {
+    "id": "norma",
+    "name": "Norma-Filiale Britz",
+    "rolle": "Sponsor",
+    "person": null,
+    "eventIds": [
+      "adventsfest-2023",
+      "familienadvent-2024",
+      "familienadvent-2025"
+    ]
+  },
+  {
+    "id": "serwester",
+    "name": "Alpakas vom Serwester Hof",
+    "rolle": "„Rentier-Ersatz“ bei Wichtelfest & Familienadvent",
+    "person": null,
+    "eventIds": [
+      "wichtelfest-2018",
+      "strolche-2022",
+      "familienadvent-2024"
+    ]
+  },
+  {
+    "id": "stolperdraht",
+    "name": "Theater Stolperdraht",
+    "rolle": "Theaterstück beim Hort-Weihnachtsmarkt",
+    "person": null,
+    "eventIds": [
+      "strolche-2022",
+      "hort-2023"
+    ]
+  },
+  {
+    "id": "bhg",
+    "name": "BHG",
+    "rolle": "Weihnachtsbaumverkauf",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "bdg",
+    "name": "BDG (Barnimer Dienstleistungsgesellschaft mbH)",
+    "rolle": "Weihnachtsbaumsammlung",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "konzertorchester",
+    "name": "Brandenburgisches Konzertorchester Eberswalde",
+    "rolle": "Weihnachtskonzerte im Rathaussaal (jährliche Tradition)",
+    "person": "Urs-Michael Theus (Leitung)",
+    "eventIds": [
+      "konzert-2019",
+      "konzert-2020",
+      "konzert-2022",
+      "konzert-2023"
+    ]
+  },
+  {
+    "id": "foerderverein",
+    "name": "Förderverein der Max-Kienitz-Grundschule",
+    "rolle": "Advents-/Weihnachtsgestecke basteln, Martinsfest (Musik)",
+    "person": null,
+    "eventIds": [
+      "adventsgestecke-2023",
+      "adventszauber-2025",
+      "martinsfest-2024"
+    ]
+  },
+  {
+    "id": "lorenz",
+    "name": "Förster Jan Lorenz",
+    "rolle": "Sponsor des Schul-Weihnachtsbaums",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "neuenhagen",
+    "name": "Spielleute Neuenhagen",
+    "rolle": "Musikalische Begleitung des Martinzugs",
+    "person": null,
+    "eventIds": [
+      "martinsfest-2024"
+    ]
+  },
+  {
+    "id": "perspektive",
+    "name": "Perspektive Oderberg e. V. / Theater OKNO",
+    "rolle": "Sternenmarkt Oderberg, Figurentheater",
+    "person": "Heike Rocher",
+    "eventIds": [
+      "oderberg-2019",
+      "oderberg-2022"
+    ]
+  },
+  {
+    "id": "tvkoepke",
+    "name": "TV Köpke",
+    "rolle": "Tombola beim Sternenmarkt Oderberg",
+    "person": null,
+    "eventIds": [
+      "oderberg-2019",
+      "oderberg-2022"
+    ]
+  },
+  {
+    "id": "westend",
+    "name": "Westend Gospel Singers",
+    "rolle": "Weihnachtskonzerte in Chorin und Golzow",
+    "person": "Hans-Peter Giering (Chorleitung)",
+    "eventIds": [
+      "chorin-2024",
+      "golzow-2023"
+    ]
+  },
+  {
+    "id": "kirche-golzow",
+    "name": "Ev. Kirche Golzow / Heimatverein Golzow",
+    "rolle": "3. Advent in Golzow, Gospelkonzert, Glühwein & Feuer",
+    "person": null,
+    "eventIds": [
+      "golzow-2022",
+      "golzow-2023"
+    ]
+  },
+  {
+    "id": "menschbrodowin",
+    "name": "MenschBrodowin e. V.",
+    "rolle": "Weihnachtsbasteln, Weihnachtsbäckerei, Schrottwichteln, Klangpiraten (Brodowin)",
+    "person": "Antje Diestel, Laura Stähler, Linn Narane, Steffi Kuper, Antje Marbach",
+    "eventIds": [
+      "brodowin-2023"
+    ]
+  },
+  {
+    "id": "keramikhuette",
+    "name": "Keramikhütte e. V.",
+    "rolle": "Krippenfiguren für die Weihnachtskrippe Senftenhütte",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "steinke",
+    "name": "Familie Steinke / Heimatverein Senftenhütte",
+    "rolle": "Weihnachtssingen Senftenhütte",
+    "person": "Franziska Gerent-Augustin & Mike Gerent (Musik)",
+    "eventIds": [
+      "senftenhutte-2022"
+    ]
+  },
+  {
+    "id": "ortsverein-neuehutte",
+    "name": "Ortsverein Neuehütte e. V.",
+    "rolle": "Weihnachtssingen unter der Douglasie (Neuehütte)",
+    "person": null,
+    "eventIds": [
+      "neuehutte-2023"
+    ]
+  },
+  {
+    "id": "billard",
+    "name": "Billardverein Hohenfinow",
+    "rolle": "Dorfweihnacht Hohenfinow",
+    "person": null,
+    "eventIds": [
+      "hohenfinow-2019"
+    ]
+  },
+  {
+    "id": "krueger",
+    "name": "Familie Dr. Krüger / Kerstin Falke",
+    "rolle": "„Orgel erleben“ in Hohenfinow",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "gemeinde-hohenfinow",
+    "name": "Gemeinde Hohenfinow",
+    "rolle": "Adventströdelmarkt, Adventskalender",
+    "person": null,
+    "eventIds": [
+      "hohenfinow-2022"
+    ]
+  },
+  {
+    "id": "ffw-parstein",
+    "name": "FFW Parstein",
+    "rolle": "Seniorenweihnachtsfeier Parstein/Parsteinsee",
+    "person": null,
+    "eventIds": [
+      "parstein-2019"
+    ]
+  },
+  {
+    "id": "sportgruppe-luedersdorf",
+    "name": "Sportgruppe Lüdersdorf",
+    "rolle": "Programmbeitrag bei der Seniorenweihnachtsfeier Parstein",
+    "person": null,
+    "eventIds": [
+      "parstein-2019"
+    ]
+  },
+  {
+    "id": "begegnungszentrum",
+    "name": "Begegnungszentrum Lunow / Sportverein Lunow",
+    "rolle": "Weihnachtsfeiern, Silvesterparties, Basteln (Lunow)",
+    "person": "Katrin Radünz / Anke Obst",
+    "eventIds": [
+      "lunow-2018",
+      "lunow-2020"
+    ]
+  },
+  {
+    "id": "findlinge",
+    "name": "„Die Findlinge“ (Oderberg)",
+    "rolle": "Weihnachtsprogramm in Lunow",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "dobbysisters",
+    "name": "„Dobbysisters and Man“",
+    "rolle": "Musikalische Begleitung Weihnachtsfeier Lunow",
+    "person": null,
+    "eventIds": []
+  },
+  {
+    "id": "kaufhalle",
+    "name": "Kaufhalle „Nah und gut“ (Familie Förster)",
+    "rolle": "Sponsor Geschenke Lunower Weihnachtsfeier",
+    "person": null,
+    "eventIds": [
+      "lunow-2018"
+    ]
+  },
+  {
+    "id": "luedersdorfer-frauen",
+    "name": "Lüdersdorfer Frauen / Liane Reuter",
+    "rolle": "Adventsmarkt Lüdersdorf",
+    "person": null,
+    "eventIds": [
+      "luedersdorf-2023"
+    ]
+  },
+  {
+    "id": "maucher",
+    "name": "Thomas Maucher & Silke Westphal",
+    "rolle": "Vorlaubenhaus (Ort des Lüdersdorfer Adventsmarkts)",
+    "person": null,
+    "eventIds": [
+      "luedersdorf-2023"
+    ]
+  },
+  {
+    "id": "feuerwehr-luedersdorf",
+    "name": "Lüdersdorfer Feuerwehr",
+    "rolle": "Unterstützung Adventsmarkt Lüdersdorf",
+    "person": null,
+    "eventIds": [
+      "luedersdorf-2023"
+    ]
+  },
+  {
+    "id": "hotels",
+    "name": "Hotel Haus Chorin / Hotel Am Schiffshebewerk / Hotel Mühlenhaus",
+    "rolle": "Veranstaltungsorte für Seniorenweihnachtsfeiern",
+    "person": null,
+    "eventIds": [
+      "senioren-2018",
+      "senioren-2019",
+      "chorin-2019",
+      "niederfinow-2022",
+      "sandkrug-2019"
+    ]
+  },
+  {
+    "id": "gaststaetten",
+    "name": "Gaststätte „Zum Farmer“ / „Küters Saal“ / „Schwarzer Adler“ / Sportlerheim Liepe / Kulturhaus Kruge / Alte Schule Senftenhütte / Vorlaubenhaus Lüdersdorf",
+    "rolle": "Veranstaltungsorte für weihnachtliche Feiern und Märkte",
+    "person": null,
+    "eventIds": [
+      "parstein-2019",
+      "liepe-2019",
+      "senftenhutte-2022",
+      "luedersdorf-2023"
+    ]
+  },
+  {
+    "id": "buergmeister",
+    "name": "Bürgermeister Horst / Bürgermeister Stürmer / Andrea von Cysewski",
+    "rolle": "Grußworte, Unterstützung, Organisation (Lunow-Stolzenhagen)",
+    "person": null,
+    "eventIds": [
+      "neuehutte-2019",
+      "parstein-2019"
+    ]
+  },
+  {
+    "id": "amt",
+    "name": "Amtsdirektor Jörg Matthes / Frau Drechsler-Wiese",
+    "rolle": "Grußworte, Seniorenbeirat",
+    "person": null,
+    "eventIds": [
+      "senioren-2018",
+      "senioren-2019",
+      "senioren-2023",
+      "senioren-2025",
+      "chorin-2019",
+      "parstein-2019"
+    ]
+  }
+]
