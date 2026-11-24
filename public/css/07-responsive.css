@@ -39,7 +39,7 @@
   }
 
   .countdown__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .filterbar {
@@ -55,6 +55,12 @@
 
   .xmas-modal {
     padding: var(--space-6);
+    position: fixed;
+    bottom: var(--space-4);
+    height: calc(100vh - 110px - var(--space-8) );
+    left: var(--space-4);
+    right: var(--space-4);
+    width: calc(100vw - var(--space-4) - var(--space-4))
   }
 
   .timeline::before {
@@ -65,8 +71,12 @@
     padding-left: var(--space-8);
   }
 
-  .xmas-modal {
-    margin-top: auto;
+  .countdown__num {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero__lead {
+    font-size: var(--fs-md);
   }
 }
 

@@ -43,7 +43,7 @@ html {
 }
 
 .theme-xmas a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .theme-xmas :focus-visible {

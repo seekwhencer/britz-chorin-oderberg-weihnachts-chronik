@@ -30,6 +30,7 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   padding-top: var(--space-11);
+  height: 110px;
 }
 
 .navbar__brand {
@@ -121,7 +122,7 @@
 }
 
 .view__head {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-2);
 }
 
 .view__title {
@@ -134,11 +135,14 @@
   max-width: 60ch;
 }
 
-.section-title {
+h2.section-title {
   font-size: var(--fs-xl);
   margin-bottom: var(--space-5);
   max-width: 1200px;
   margin: var(--space-5) auto;
+  font-family: var(--xmas-font-sans);
+  font-weight: 100;
+  color: var(--xmas-text-secondary);
 }
 
 .xmas-footer {

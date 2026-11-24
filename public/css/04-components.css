@@ -98,12 +98,12 @@
 }
 
 .chip--cat {
-  background-color: var(--xmas-gold-glow);
-  color: var(--xmas-gold-accent);
+  background-color: var(--xmas-bg-secondary);
+  color: var(--xmas-text-muted);
 }
 
 .theme-xmas.dark .chip--cat {
-  color: var(--xmas-gold-accent);
+  color: var(--xmas-text-muted);
 }
 
 .chip--filter {
@@ -213,7 +213,7 @@
 }
 
 .xmas-modal {
-  background-color: var(--xmas-bg-elevated);
+  background-color: var(--xmas-bg-subtle);
   border: 1px solid var(--xmas-gold-accent);
   border-radius: var(--xmas-radius-lg);
   box-shadow: var(--xmas-shadow-modal);
@@ -263,7 +263,7 @@
 .modal__jahr {
   font-family: var(--xmas-font-serif);
   font-size: var(--fs-2xl);
-  font-weight: 700;
+  font-weight: 100;
   color: var(--xmas-red-primary);
 }
 
@@ -274,7 +274,7 @@
 }
 
 .modal__titel {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   margin-bottom: var(--space-3);
 }
 
@@ -366,7 +366,7 @@
 }
 
 .countdown__cell {
-  padding: var(--space-3) var(--space-2);
+  padding: var(--space-3) var(--space-1);
   text-align: center;
 }
 
@@ -374,7 +374,7 @@
   display: block;
   font-family: var(--xmas-font-serif);
   font-size: var(--fs-3xl);
-  font-weight: 700;
+  font-weight: 100;
   color: var(--xmas-red-primary);
   line-height: 1;
 }
@@ -450,6 +450,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+}
+
+.event-card .chip--cat {
+  background-color: var(--xmas-bg-elevated);
 }
 
 .event-card__head {
@@ -598,7 +602,7 @@
 }
 
 .tradition-card__name {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
 }
 
 .tradition-card__desc {
@@ -612,8 +616,7 @@
 }
 
 .tradition-card--featured {
-  border: 1px solid var(--xmas-gold-accent);
-  border-top: 4px solid var(--xmas-gold-accent);
+  
 }
 
 /* === Highlight Card === */
@@ -624,7 +627,7 @@
 }
 
 .highlight-card__titel {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
 }
 
 .highlight-card__text {
@@ -642,7 +645,7 @@
 }
 
 .quellen-card__title {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   margin-bottom: var(--space-3);
 }
 
@@ -681,6 +684,7 @@
 .timeline__year {
   position: relative;
   padding-left: var(--space-10);
+  padding-top: 8rem;
   margin-bottom: var(--space-10);
 }
 
@@ -698,13 +702,16 @@
 
 .timeline__head {
   margin-bottom: var(--space-4);
+  position: absolute;
+  top: calc(-1 * var(--space-5));
 }
 
 .timeline__zahl {
   font-family: var(--xmas-font-serif);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: var(--fs-3xl);
+  font-weight: 100;
   color: var(--xmas-text-primary);
+  line-height: var(--fs-2xl);
 }
 
 .timeline__kontext {
