@@ -13,7 +13,10 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  background-image: radial-gradient(circle at center top, rgba(253, 222, 120, 0.3), transparent 50vh);
+  background-image:
+    radial-gradient(circle at center top, rgba(253, 222, 120, 0.3), transparent 60vh),
+    linear-gradient(to bottom, var(--xmas-bg-primary), var(--xmas-bg-secondary));
+    min-height: 100vh;
 }
 
 .theme-xmas {

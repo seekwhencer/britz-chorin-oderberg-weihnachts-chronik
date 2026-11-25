@@ -119,6 +119,8 @@
 
 .view {
   display: block;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .view__head {
