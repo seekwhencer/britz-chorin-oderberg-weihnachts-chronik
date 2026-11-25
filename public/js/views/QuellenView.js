@@ -42,6 +42,17 @@ export class QuellenView {
       </section>
 
       <section class="xmas-card quellen-card" data-reveal>
+        <h2 class="quellen-card__title">Made by</h2>
+        <p>Erstellt von <a href="https://skwncr.net" target="_blank" rel="noopener">Matthias Kallenbach</a> (<a href="https://github.com/seekwhencer" target="_blank" rel="noopener">seekwhencer</a>) — Senior Frontend Engineer mit über 20 Jahren Erfahrung, wohnhaft in Britz.</p>
+        <p>Die Inhalte des Amtsblatts wurden mit <a href="https://github.com/seekwhencer/rag-qdrant-mcp" target="_blank" rel="noopener">rag-qdrant-mcp</a> extrahiert: eine lokale RAG-Pipeline (docling → Embeddings → Qdrant), die die Dokumente als MCP-Server für KI-Assistenten bereitstellt.</p>
+      </section>
+
+      <section class="xmas-card quellen-card" data-reveal>
+        <h2 class="quellen-card__title">Gemacht mit KI</h2>
+        <p>Diese Website wurde mit lokaler KI erstellt — das <code>Qwen 3.8</code> Modell läuft lokal, ohne Cloud und ohne API-Keys.</p>
+      </section>
+
+      <section class="xmas-card quellen-card" data-reveal>
         <h2 class="quellen-card__title">Stand &amp; Hinweis</h2>
         <p>Stand: ${this.esc(meta.stand)}.</p>
         <p>Keine neuen Fakten wurden erfunden — jeder Satz auf dieser Website ist in der Chronologie belegt.</p>
