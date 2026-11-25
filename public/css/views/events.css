@@ -1,0 +1,30 @@
+/* views/events.css — Events */
+
+.events__counter {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--xmas-gold-accent);
+  margin-top: var(--space-2);
+}
+
+.events__controls {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+.events__empty {
+  text-align: center;
+  padding: var(--space-10) var(--space-4);
+  color: var(--xmas-text-secondary);
+}
+
+.events__empty p {
+  margin-bottom: var(--space-4);
+}

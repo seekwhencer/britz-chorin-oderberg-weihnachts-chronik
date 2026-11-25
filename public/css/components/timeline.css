@@ -1,0 +1,73 @@
+/* components/timeline.css — Timeline */
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--xmas-gold-accent), var(--xmas-green-primary));
+}
+
+.timeline__year {
+  position: relative;
+  padding-left: var(--space-10);
+  padding-top: 8rem;
+  margin-bottom: var(--space-10);
+}
+
+.timeline__node {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--xmas-bg-elevated);
+  border: 3px solid var(--xmas-gold-accent);
+  box-shadow: 0 0 0 4px var(--xmas-gold-light);
+}
+
+.timeline__head {
+  margin-bottom: var(--space-4);
+  position: absolute;
+  top: calc(-1 * var(--space-5));
+}
+
+.timeline__zahl {
+  font-family: var(--xmas-font-serif);
+  font-size: var(--fs-3xl);
+  font-weight: 100;
+  color: var(--xmas-text-primary);
+  line-height: var(--fs-2xl);
+}
+
+.timeline__kontext {
+  font-size: var(--fs-md);
+  color: var(--xmas-text-muted);
+  margin-top: var(--space-1);
+}
+
+.timeline__events {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.timeline__card {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.timeline__card.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}

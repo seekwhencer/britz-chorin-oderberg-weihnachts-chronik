@@ -1,0 +1,58 @@
+/* components/buttons.css — Buttons */
+
+.xmas-btn-primary,
+.xmas-btn-secondary,
+.xmas-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--xmas-radius-sm);
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--xmas-font-sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.xmas-btn-primary {
+  background-color: var(--xmas-red-primary);
+  color: #FAF7F2;
+  border: 1px solid transparent;
+}
+
+.xmas-btn-primary:hover {
+  background-color: var(--xmas-red-hover);
+  box-shadow: 0 0 18px var(--xmas-gold-glow);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.xmas-btn-secondary {
+  background-color: transparent;
+  color: var(--xmas-green-primary);
+  border: 1px solid var(--xmas-green-primary);
+}
+
+.theme-xmas.dark .xmas-btn-secondary {
+  color: var(--xmas-green-primary);
+  border-color: var(--xmas-green-primary);
+}
+
+.xmas-btn-secondary:hover {
+  background-color: var(--xmas-green-soft);
+  text-decoration: none;
+}
+
+.xmas-btn-gold {
+  background: linear-gradient(135deg, #D97706, #B45309);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.xmas-btn-gold:hover {
+  box-shadow: 0 0 20px var(--xmas-gold-glow);
+  text-decoration: none;
+}

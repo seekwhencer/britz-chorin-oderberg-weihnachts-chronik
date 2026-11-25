@@ -1,0 +1,32 @@
+/* components/akteur-card.css — Akteur Card */
+
+.akteur-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.akteur-card__name {
+  font-size: var(--fs-lg);
+}
+
+.akteur-card__rolle {
+  font-size: var(--fs-md);
+}
+
+.akteur-card__person {
+  font-size: var(--fs-sm);
+}
+
+.akteur-card__count {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--xmas-gold-accent);
+}
+
+.akteur-card__events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}

@@ -12,6 +12,7 @@ export class FilterBar {
     veranstalter = true,
     orte = false,
     onYear = null,
+    searchbox = null,
   } = {}) {
     this.chronik = chronik;
     this.store = store;
@@ -21,6 +22,7 @@ export class FilterBar {
     this.showVeranstalter = veranstalter;
     this.showOrte = orte;
     this.onYear = onYear;
+    this.searchbox = searchbox;
     this.el = null;
     this.activeYear = null;
     this.unsub = null;
@@ -56,11 +58,13 @@ export class FilterBar {
       this.yearGroupHtml(),
       this.showKategorien ? this.kategorieGroupHtml() : "",
       this.showVeranstalter && this.veranstalter().length ? this.veranstalterGroupHtml() : "",
+      this.searchbox ? `<div data-searchbox></div>` : "",
       this.showOrte && this.orte().length ? this.ortGroupHtml() : "",
       `<button type="button" class="xmas-btn xmas-btn-secondary filterbar__reset" data-reset>Zurücksetzen</button>`,
     ].join("");
     host.appendChild(el);
     this.el = el;
+    if (this.searchbox) this.searchbox.render(el.querySelector("[data-searchbox]"));
     this.bind();
     this.unsub = this.store.subscribe((changed) => {
       if (changed.filter) this.onFilterChange();

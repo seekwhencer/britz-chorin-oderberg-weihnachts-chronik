@@ -1,0 +1,32 @@
+/* components/badges.css — Badges */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  border-radius: var(--xmas-radius-pill);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.badge--ort {
+  background-color: var(--xmas-bg-subtle);
+  color: var(--xmas-text-secondary);
+  border: 1px solid var(--xmas-border);
+}
+
+.badge--geplant {
+  background-color: var(--xmas-bg-subtle);
+  color: var(--xmas-gold-accent);
+  border: 1px solid var(--xmas-gold-accent);
+}
+
+.badge--seit {
+  background-color: var(--xmas-green-soft);
+  color: var(--xmas-green-primary);
+}
+
+.theme-xmas.dark .badge--seit {
+  color: #86EFAC;
+}

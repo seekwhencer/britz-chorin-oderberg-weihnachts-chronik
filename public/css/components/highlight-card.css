@@ -1,0 +1,20 @@
+/* components/highlight-card.css — Highlight Card */
+
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.highlight-card__titel {
+  font-size: var(--fs-lg);
+}
+
+.highlight-card__text {
+  font-size: var(--fs-md);
+  flex: 1;
+}
+
+.highlight-card__cta {
+  align-self: flex-start;
+}

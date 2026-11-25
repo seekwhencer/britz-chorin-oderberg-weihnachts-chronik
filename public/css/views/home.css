@@ -1,6 +1,5 @@
-/* 05-views.css — View-spezifische Layouts */
+/* views/home.css — Home */
 
-/* === Home === */
 .hero {
   text-align: center;
   padding: var(--space-10) var(--space-4) var(--space-10);
@@ -19,6 +18,7 @@
 .hero__title {
   font-size: clamp(2.5rem, 7vw, 4rem);
   margin-bottom: var(--space-4);
+  text-shadow:  calc(-1 * var(--space-2)) calc(-1 * var(--space-3)) var(--space-1) rgba(0, 0, 0, 0.4);
 }
 
 .hero__lead {
@@ -70,53 +70,4 @@
   margin-bottom: var(--space-4);
   max-width: 1200px;
   margin: auto;
-}
-
-/* === Events === */
-.events__counter {
-  font-size: var(--fs-md);
-  font-weight: 600;
-  color: var(--xmas-gold-accent);
-  margin-top: var(--space-2);
-}
-
-.events__controls {
-  display: grid;
-  gap: var(--space-4);
-  margin-bottom: var(--space-6);
-}
-
-.events__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-5);
-}
-
-.events__empty {
-  text-align: center;
-  padding: var(--space-10) var(--space-4);
-  color: var(--xmas-text-secondary);
-}
-
-.events__empty p {
-  margin-bottom: var(--space-4);
-}
-
-/* === Akteure === */
-.akteure-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--space-5);
-}
-
-/* === Traditionen === */
-.traditionen-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--space-5);
-}
-
-/* === Quellen === */
-.view--quellen .xmas-card {
-  width: 100%;
 }

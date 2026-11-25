@@ -3,7 +3,6 @@
 
 import { EventCard } from "../ui/EventCard.js";
 import { FilterBar } from "../ui/FilterBar.js";
-import { SearchBox } from "../ui/SearchBox.js";
 
 export class EventsView {
   constructor({ chronik, store, bus, searchbox, reveal } = {}) {
@@ -25,6 +24,7 @@ export class EventsView {
       kategorien: true,
       veranstalter: true,
       orte: false,
+      searchbox: this.searchbox,
     });
   }
 
@@ -55,7 +55,6 @@ export class EventsView {
 
     const controls = el.querySelector("[data-controls]");
     this.filterbar.render(controls);
-    this.searchbox.render(controls);
 
     el.querySelector("[data-reset-empty]").addEventListener("click", () => {
       this.store.set({ filter: { jahre: [], kategorien: [], veranstalter: [], orte: [] }, query: "" });

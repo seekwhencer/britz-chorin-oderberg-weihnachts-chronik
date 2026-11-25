@@ -1,0 +1,13 @@
+/* components/searchbox.css — SearchBox */
+
+.searchbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.searchbox__label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--xmas-text-secondary);
+}

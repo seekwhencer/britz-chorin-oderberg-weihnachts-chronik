@@ -1,0 +1,53 @@
+/* components/countdown.css — Countdown */
+
+.countdown__label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--xmas-gold-accent);
+  margin-bottom: var(--space-2);
+}
+
+.countdown__titel {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-2);
+}
+
+.countdown__meta {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-4);
+}
+
+.countdown__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.countdown__cell {
+  padding: var(--space-3) var(--space-1);
+  text-align: center;
+}
+
+.countdown__num {
+  display: block;
+  font-family: var(--xmas-font-serif);
+  font-size: var(--fs-3xl);
+  font-weight: 100;
+  color: var(--xmas-red-primary);
+  line-height: 1;
+}
+
+.countdown__unit {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--xmas-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.countdown__fallback {
+  font-size: var(--fs-lg);
+}

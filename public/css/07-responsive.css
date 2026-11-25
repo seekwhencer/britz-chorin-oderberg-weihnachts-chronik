@@ -1,6 +1,23 @@
 /* 07-responsive.css — Breakpoints */
 
 @media (max-width: 720px) {
+
+  .theme-xmas h1 {
+    font-size: var(--fs-2xl);
+  }
+
+  .theme-xmas h2 {
+    font-size: var(--fs-md);
+  }
+  
+  .theme-xmas h3 {
+    font-size: var(--fs-lg);
+  }
+
+  .theme-xmas .xmas-heading {
+    font-size: var(--fs-md);
+  }
+
   .xmas-navbar {
     padding: var(--space-3) var(--space-4);
     gap: var(--space-3);
@@ -19,7 +36,7 @@
 
   .navbar__links a {
     font-size: var(--fs-xs);
-    padding: var(--space-2) var(--space-2);
+    padding: var(--space-1) var(--space-1);
   }
 
   .theme-toggle__label {
@@ -35,7 +52,12 @@
   }
 
   .hero {
-    padding: var(--space-6) var(--space-2) var(--space-8);
+    padding: 0 var(--space-6) var(--space-2) var(--space-6);
+  }
+
+  .xmas-quote {
+    font-size: var(--fs-xl);
+    padding: var(--space-4);
   }
 
   .countdown__grid {
@@ -57,7 +79,7 @@
     padding: var(--space-6);
     position: fixed;
     bottom: var(--space-4);
-    height: calc(100vh - 110px - var(--space-8) );
+    height: calc(100vh - 110px - var(--space-8));
     left: var(--space-4);
     right: var(--space-4);
     width: calc(100vw - var(--space-4) - var(--space-4))
@@ -77,6 +99,10 @@
 
   .hero__lead {
     font-size: var(--fs-md);
+  }
+
+  .events__controls {
+    gap: 0;
   }
 }
 

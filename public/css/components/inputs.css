@@ -1,0 +1,23 @@
+/* components/inputs.css — Inputs & Selects */
+
+.xmas-input,
+.xmas-select,
+.xmas-textarea {
+  width: 100%;
+  background-color: var(--xmas-bg-elevated);
+  color: var(--xmas-text-primary);
+  border: 1px solid var(--xmas-border-strong);
+  border-radius: var(--xmas-radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--xmas-font-sans);
+  font-size: var(--fs-xs);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.xmas-input:focus,
+.xmas-select:focus,
+.xmas-textarea:focus {
+  border-color: var(--xmas-gold-accent);
+  box-shadow: 0 0 0 3px var(--xmas-gold-glow);
+  outline: none;
+}

@@ -1,0 +1,17 @@
+/* components/cards.css — Cards */
+
+.xmas-card {
+  background-color: var(--xmas-bg-secondary);
+  border-radius: var(--xmas-radius-md);
+  box-shadow: var(--xmas-shadow-card);
+  padding: var(--space-6);
+  position: relative;
+}
+
+.xmas-card--featured {
+  background-color: none;
+}
+
+.theme-xmas.dark .xmas-card {
+  backdrop-filter: blur(12px);
+}

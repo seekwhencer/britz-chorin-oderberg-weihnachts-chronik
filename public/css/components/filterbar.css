@@ -1,0 +1,39 @@
+/* components/filterbar.css — FilterBar */
+
+.filterbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+}
+
+.filterbar__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.filterbar__label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--xmas-text-secondary);
+}
+
+.filterbar__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.filterbar__reset {
+  align-self: flex-end;
+}
+
+.chronik__empty {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--xmas-text-muted);
+  background-color: var(--xmas-bg-secondary);
+  border: 1px dashed var(--xmas-border);
+  border-radius: var(--xmas-radius-md);
+}
