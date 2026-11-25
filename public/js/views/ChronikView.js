@@ -83,12 +83,27 @@ export class ChronikView {
     const jahre = [...new Set(events.map((e) => e.jahr))].sort((a, b) => b - a);
 
     const timeline = this.el.querySelector("[data-timeline]");
-    timeline.innerHTML = jahre.map((j) => this.yearBlock(j, orte)).join("");
+    let index = 0;
+    timeline.innerHTML = jahre
+      .map((j) => {
+        const yearEvents = this.yearEvents(j, orte);
+        const block = this.yearBlock(j, yearEvents, index);
+        index += yearEvents.length;
+        return block;
+      })
+      .join("");
 
     const empty = this.el.querySelector("[data-chronik-empty]");
     if (empty) empty.hidden = jahre.length > 0;
 
     if (this.reveal) this.reveal.observe(this.el);
+  }
+
+  yearEvents(jahr, orte = []) {
+    return this.chronik.events
+      .filter((e) => e.jahr === jahr)
+      .filter((e) => !orte.length || orte.includes(e.ortName))
+      .sort((a, b) => (a.datum || "").localeCompare(b.datum || ""));
   }
 
   onYear(jahr) {
@@ -114,11 +129,7 @@ export class ChronikView {
     if (jahr) this.filterbar.selectYear(jahr);
   }
 
-  yearBlock(jahr, orte = []) {
-    const events = this.chronik.events
-      .filter((e) => e.jahr === jahr)
-      .filter((e) => !orte.length || orte.includes(e.ortName))
-      .sort((a, b) => (a.datum || "").localeCompare(b.datum || ""));
+  yearBlock(jahr, events, startIndex = 0) {
     const context = YEAR_CONTEXT[jahr] || "";
     return `
       <li class="timeline__year" data-jahr="${jahr}" id="jahr-${jahr}">
@@ -128,15 +139,16 @@ export class ChronikView {
           ${context ? `<p class="timeline__kontext">${this.esc(context)}</p>` : ""}
         </div>
         <div class="timeline__events">
-          ${events.map((e) => this.cardSlot(e)).join("")}
+          ${events.map((e, i) => this.cardSlot(e, startIndex + i)).join("")}
         </div>
       </li>
     `;
   }
 
-  cardSlot(event) {
+  cardSlot(event, index) {
+    const side = index % 2 === 0 ? "left" : "right";
     const wrap = document.createElement("div");
-    wrap.className = "timeline__card";
+    wrap.className = `timeline__card timeline__card--${side}`;
     wrap.setAttribute("data-reveal", "");
     wrap.appendChild(EventCard.render(event, this.chronik));
     return wrap.outerHTML;

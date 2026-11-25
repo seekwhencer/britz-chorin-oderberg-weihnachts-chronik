@@ -1,4 +1,4 @@
-/* components/timeline.css — Timeline */
+/* components/timeline.css — Timeline (zentrierte Linie, abwechselnde Cards) */
 
 .timeline {
   list-style: none;
@@ -10,36 +10,44 @@
 .timeline::before {
   content: "";
   position: absolute;
-  left: 11px;
+  left: 50%;
   top: 0;
   bottom: 0;
   width: 2px;
+  transform: translateX(-50%);
   background: linear-gradient(180deg, var(--xmas-gold-accent), var(--xmas-green-primary));
 }
 
 .timeline__year {
   position: relative;
-  padding-left: var(--space-10);
-  padding-top: 8rem;
+  padding-top: var(--space-8);
   margin-bottom: var(--space-10);
 }
 
 .timeline__node {
   position: absolute;
-  left: 0;
-  top: 0.25rem;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--xmas-bg-elevated);
   border: 3px solid var(--xmas-gold-accent);
   box-shadow: 0 0 0 4px var(--xmas-gold-light);
+  z-index: 2;
 }
 
 .timeline__head {
-  margin-bottom: var(--space-4);
-  position: absolute;
-  top: calc(-1 * var(--space-5));
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: max-content;
+  max-width: 90%;
+  margin: 0 auto var(--space-8);
+  text-shadow: calc(-1 * var(--space-2)) calc(-1 * var(--space-3)) var(--space-1) rgba(0, 0, 0, 0.4);
+  padding: var(--space-5) var(--space-5);
+  background-image: radial-gradient(circle at center center, rgb(from var(--xmas-bg-primary) r g b / 1), transparent 50%);
 }
 
 .timeline__zahl {
@@ -57,17 +65,34 @@
 }
 
 .timeline__events {
-  display: grid;
-  gap: var(--space-8);
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline__card {
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 400ms ease, transform 400ms ease;
+  --tl-gap: 1.5rem;
+  --tl-overlap: 150px;
+  width: min(400px, calc(50% - var(--tl-gap)));
 }
 
-.timeline__card.is-revealed {
-  opacity: 1;
-  transform: translateY(0);
+.timeline__card.timeline__card--left {
+  align-self: flex-start;
+  margin-left: calc(50% - var(--tl-gap) - min(400px, calc(50% - var(--tl-gap))));
+  transform: translateX(-16px);
+}
+
+.timeline__card.timeline__card--right {
+  align-self: flex-end;
+  margin-right: calc(50% - var(--tl-gap) - min(400px, calc(50% - var(--tl-gap))));
+  transform: translateX(16px);
+}
+
+/* Vertikale Überlappung: jede Karte beginnt auf halber Höhe der vorherigen */
+.timeline__card + .timeline__card {
+  margin-top: calc(-1 * var(--tl-overlap));
+}
+
+.timeline__card.timeline__card--left.is-revealed,
+.timeline__card.timeline__card--right.is-revealed {
+  transform: translateX(0);
 }
