@@ -31,7 +31,7 @@
 }
 
 .xmas-btn-secondary {
-  background-color: transparent;
+  background-color: var(--xmas-bg-opac-subtile);
   color: var(--xmas-green-primary);
   border: 1px solid var(--xmas-green-primary);
 }
@@ -39,6 +39,7 @@
 .theme-xmas.dark .xmas-btn-secondary {
   color: var(--xmas-green-primary);
   border-color: var(--xmas-green-primary);
+  background-color: var(--xmas-bg-opac-subtile);
 }
 
 .xmas-btn-secondary:hover {

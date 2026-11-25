@@ -36,7 +36,7 @@ xmas-history/
 │   ├── js/
 │   │   ├── main.js                  ← Einstiegspunkt
 │   │   ├── core/                    ← App, Router, Store, EventBus, Reveal
-│   │   ├── ui/                      ← Snowfall, LightString, Modal, Countdown, …
+│   │   ├── ui/                      ← Snowfall, Modal, Countdown, …
 │   │   ├── views/                   ← Home, Chronik, Events, Akteure, Traditionen, Quellen
 │   │   └── data/loader.js           ← lädt public/data/*.json
 │   └── data/                        ← meta, kategorie, events, akteure, traditionen

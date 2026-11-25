@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="100" viewBox="0 0 720 100">
+  <defs>
+    <linearGradient id="pine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#477653"/><stop offset="1" stop-color="#173f2c"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e66b59"/><stop offset=".55" stop-color="#b52e32"/><stop offset="1" stop-color="#741e28"/></linearGradient>
+    <g id="sprig" fill="none" stroke="url(#pine)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-37 10 Q-14 -2 0 0 Q17 3 38 -12" stroke="#214c35" stroke-width="2.2"/>
+      <path d="M-27 6l-8 -10m13 8l-3 -13m9 10l2 -13m-1 15l12 -12m-5 13l17 -8m-8 9l20 -3m-9 2l17 5" stroke-width="2.1"/>
+      <path d="M-18 3l-12 8m19 -10l-7 13m15 -13l-1 14m8 -13l8 10m-1 -12l14 6m-2 -10l11 1" stroke-width="2"/>
+      <path d="M-27 6l-9 -2m17 -3l-2 -10m11 9l6 -11m1 12l14 -8m-4 10l17 -3m-4 0l14 8" stroke="#668b60" stroke-width="1.2"/>
+    </g>
+    <g id="ornament">
+      <path d="M0 -9v-5m-3 -1h6" stroke="#d7b36b" stroke-width="1.6"/>
+      <circle cy="0" r="7.2" fill="url(#red)" stroke="#79242b" stroke-width=".8"/>
+      <ellipse cx="-2.4" cy="-2.5" rx="1.7" ry="3" fill="#fff" opacity=".35" transform="rotate(25 -2.4 -2.5)"/>
+    </g>
+    <g id="star" fill="#d8b568"><path d="M0 -5.8L1.5 -1.8L5.8 0L1.5 1.5L0 5.8L-1.5 1.5L-5.8 0L-1.5 -1.8Z"/></g>
+  </defs>
+  <!-- soft curved garland backbone -->
+  <path d="M-10 29 C95 18 135 48 240 42 S390 15 485 29 S625 48 730 23" fill="none" stroke="#795b38" stroke-width="1.8" opacity=".8"/>
+  <!-- layered evergreen boughs -->
+  <use xlink:href="#sprig" transform="translate(28 29) rotate(-9) scale(1.05)"/>
+  <use xlink:href="#sprig" transform="translate(78 31) rotate(9) scale(1.05)"/>
+  <use xlink:href="#sprig" transform="translate(133 39) rotate(-7) scale(1.12)"/>
+  <use xlink:href="#sprig" transform="translate(190 43) rotate(8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(247 39) rotate(-8) scale(1.1)"/>
+  <use xlink:href="#sprig" transform="translate(304 29) rotate(8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(360 25) rotate(-8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(417 27) rotate(8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(474 36) rotate(-8) scale(1.1)"/>
+  <use xlink:href="#sprig" transform="translate(531 42) rotate(8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(588 38) rotate(-8) scale(1.1)"/>
+  <use xlink:href="#sprig" transform="translate(645 29) rotate(8) scale(1.08)"/>
+  <use xlink:href="#sprig" transform="translate(700 25) rotate(-8) scale(1.05)"/>
+  <!-- small pine tips filling the silhouette -->
+  <g fill="none" stroke="#315e3d" stroke-width="1.6" stroke-linecap="round">
+    <path d="M14 25l-7 -8m11 8l-1 -11m4 12l7 -10m42 4l-7 -9m11 10l2 -12m3 13l9 -8m37 17l-8 -10m12 11l1 -12m4 13l9 -9m44 14l-8 -9m13 10l3 -12m4 13l9 -8m43 -4l-7 -9m12 9l2 -11m4 10l9 -8m44 -10l-8 -9m12 9l2 -11m5 11l9 -8m43 -6l-8 -9m12 10l2 -11m5 10l9 -7m43 0l-8 -9m12 9l2 -11m5 10l9 -7m44 10l-8 -9m12 9l2 -11m5 10l9 -7m44 15l-8 -9m12 10l2 -11m5 10l9 -7m44 9l-8 -9m12 9l2 -11m5 10l9 -7m44 -2l-8 -9m12 9l2 -11m5 10l9 -7"/>
+  </g>
+  <!-- ornaments tucked into the greenery -->
+  <use xlink:href="#ornament" transform="translate(105 37) scale(.88)"/>
+  <use xlink:href="#ornament" transform="translate(276 35) scale(.78)"/>
+  <use xlink:href="#ornament" transform="translate(445 34) scale(.9)"/>
+  <use xlink:href="#ornament" transform="translate(615 36) scale(.8)"/>
+  <use xlink:href="#star" transform="translate(52 18) scale(.8)"/>
+  <use xlink:href="#star" transform="translate(222 26) scale(.65)"/>
+  <use xlink:href="#star" transform="translate(390 17) scale(.8)"/>
+  <use xlink:href="#star" transform="translate(558 24) scale(.65)"/>
+</svg>

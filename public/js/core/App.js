@@ -7,7 +7,6 @@ import { Router } from "./Router.js";
 import { Reveal } from "./Reveal.js";
 import { Theme } from "../ui/Theme.js";
 import { Snowfall } from "../ui/Snowfall.js";
-import { LightString } from "../ui/LightString.js";
 import { Modal } from "../ui/Modal.js";
 import { Countdown } from "../ui/Countdown.js";
 import { SearchBox } from "../ui/SearchBox.js";
@@ -40,7 +39,6 @@ export class App {
     this.modal = new Modal();
     this.reveal = new Reveal(this.root);
     this.snowfall = new Snowfall({ reduced: this.reduced });
-    this.lightstring = new LightString({ reduced: this.reduced });
     this.theme = new Theme({ snowfall: this.snowfall, bus: this.bus });
     const termine = (chronik.events || []).filter((e) => e.geplant && e.datum);
     this.countdown = new Countdown(termine, { reduced: this.reduced });
@@ -71,7 +69,6 @@ export class App {
   start() {
     this.theme.init();
     this.snowfall.init();
-    this.lightstring.init();
     this.reveal.start();
     this.bindGlobal();
     this.bindNav();

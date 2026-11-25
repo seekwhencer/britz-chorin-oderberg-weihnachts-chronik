@@ -6,6 +6,7 @@
   --xmas-bg-secondary: #F2ECE1;
   --xmas-bg-elevated: #FFFFFF;
   --xmas-bg-subtle: #EAE2D3;
+  --xmas-bg-opac-subtile: rgba(255, 255, 255, 0.3);
 
   --xmas-text-primary: #1C1917;
   --xmas-text-secondary: #57534E;
@@ -74,6 +75,7 @@
   --xmas-bg-secondary: #131C31;
   --xmas-bg-elevated: #1E293B;
   --xmas-bg-subtle: #172033;
+  --xmas-bg-opac-subtile: rgba(0, 0, 0, 0.1);
 
   --xmas-text-primary: #F8FAFC;
   --xmas-text-secondary: #94A3B8;

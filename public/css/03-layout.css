@@ -21,7 +21,10 @@
   position: sticky;
   top: 0;
   z-index: 110;
+  background-image: url(../images/weihnachtsgirlande_voll.svg);
   background-color: var(--xmas-bg-subtle);
+  background-position: 0 -40px;
+  background-repeat: repeat-x;
   border-bottom: 1px solid var(--xmas-border);
   padding: var(--space-3) var(--space-6);
   display: flex;

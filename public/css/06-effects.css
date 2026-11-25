@@ -1,4 +1,4 @@
-/* 06-effects.css — Snowfall, LightString, Reduced-Motion */
+/* 06-effects.css — Snowfall, Reduced-Motion */
 
 .xmas-snow-container {
   position: fixed;
@@ -32,48 +32,6 @@
   100% { opacity: 1; }
 }
 
-/* === LightString (SVG) === */
-.lightstring-host {
-  position: fixed;
-  top: 4px;
-  left: 0;
-  width: 100%;
-  z-index: 115;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.lightstring-host svg {
-  display: block;
-  width: 100%;
-  height: 46px;
-}
-
-.lightstring__wire {
-  fill: none;
-  stroke: var(--xmas-border-strong);
-  stroke-width: 2;
-}
-
-.xmas-bulb {
-  animation: lightstring-twinkle 2.4s ease-in-out infinite;
-  transform-origin: center;
-}
-
-.xmas-bulb-glow {
-  animation: lightstring-glow 2.4s ease-in-out infinite;
-}
-
-@keyframes lightstring-twinkle {
-  0%, 100% { opacity: 0.55; }
-  50% { opacity: 1; }
-}
-
-@keyframes lightstring-glow {
-  0%, 100% { opacity: 0.15; }
-  50% { opacity: 0.5; }
-}
-
 /* === Reveal (generic) === */
 [data-reveal] {
   opacity: 0;
@@ -96,11 +54,6 @@
   }
   .xmas-fairy-lights {
     animation: none !important;
-  }
-  .xmas-bulb,
-  .xmas-bulb-glow {
-    animation: none !important;
-    opacity: 0.8;
   }
   [data-reveal],
   .timeline__card {
