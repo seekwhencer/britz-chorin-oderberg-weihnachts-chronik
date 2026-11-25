@@ -33,7 +33,7 @@ export class AkteureView {
         <p class="view__lead">Vereine, Personen und Institutionen, die die Weihnachtszeit in Britz tragen.</p>
       </header>
       <div class="akteure-grid">
-        ${akteure.map((a) => this.card(a)).join("")}
+        ${akteure.map((a, i) => this.card(a, i)).join("")}
       </div>
     `;
     this.el = el;
@@ -41,7 +41,7 @@ export class AkteureView {
     return el;
   }
 
-  card(a) {
+  card(a, i = 0) {
     const events = (a.eventIds || [])
       .map((id) => this.chronik.events.find((e) => e.id === id))
       .filter(Boolean);
@@ -51,8 +51,9 @@ export class AkteureView {
           `<button type="button" class="chip chip--event" data-select-event="${this.esc(e.id)}">${this.esc(e.jahr)} · ${this.esc(e.titel)}</button>`
       )
       .join("");
+    const snow = i % 4 === 0 ? " xmas-card--snow" : i % 4 === 1 ? " xmas-card--snow-left" : i % 4 === 2 ? " xmas-card--snow-right" : "";
     return `
-      <article class="xmas-card akteur-card" data-reveal>
+      <article class="xmas-card akteur-card${snow}" data-reveal>
         <h3 class="akteur-card__name">${this.esc(a.name)}</h3>
         <p class="akteur-card__rolle">${this.esc(a.rolle)}</p>
         ${a.person ? `<p class="akteur-card__person"><strong>Person:</strong> ${this.esc(a.person)}</p>` : ""}

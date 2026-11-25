@@ -28,7 +28,7 @@ export class TraditionenView {
         <p class="view__lead">Wiederkehrende Bräuche und Feste, die die Vorweihnachtszeit in Britz prägen.</p>
       </header>
       <div class="traditionen-list">
-        ${traditionen.map((t) => this.card(t)).join("")}
+        ${traditionen.map((t, i) => this.card(t, i)).join("")}
       </div>
     `;
     this.el = el;
@@ -36,7 +36,7 @@ export class TraditionenView {
     return el;
   }
 
-  card(t) {
+  card(t, i = 0) {
     const featured = t.id === "ortsweihnachtsbaum";
     const events = (t.eventIds || [])
       .map((id) => this.chronik.events.find((e) => e.id === id))
@@ -47,8 +47,9 @@ export class TraditionenView {
           `<button type="button" class="chip chip--event" data-select-event="${this.esc(e.id)}">${this.esc(e.jahr)} · ${this.esc(e.titel)}</button>`
       )
       .join("");
+    const snow = featured ? " xmas-card--snow" : i % 3 === 0 ? " xmas-card--snow-left" : i % 3 === 1 ? " xmas-card--snow-right" : "";
     return `
-      <article class="xmas-card tradition-card${featured ? " tradition-card--featured" : ""}" data-reveal>
+      <article class="xmas-card tradition-card${featured ? " tradition-card--featured" : ""}${snow}" data-reveal>
         <div class="tradition-card__head">
           <h3 class="tradition-card__name">${this.esc(t.name)}</h3>
           <span class="badge badge--seit">seit ${this.esc(t.seit)}</span>

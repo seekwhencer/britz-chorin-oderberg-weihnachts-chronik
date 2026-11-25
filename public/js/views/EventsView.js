@@ -102,9 +102,11 @@ export class EventsView {
       .sort((a, b) => b.jahr - a.jahr || (a.datum || "").localeCompare(b.datum || ""));
 
     this.grid.innerHTML = "";
-    for (const event of list) {
-      const card = EventCard.render(event, this.chronik);
+    const snowClasses = ["xmas-card--snow", "xmas-card--snow-left", "xmas-card--snow-right"];
+    for (let i = 0; i < list.length; i++) {
+      const card = EventCard.render(list[i], this.chronik);
       card.setAttribute("data-reveal", "");
+      if (i % 3 === 0) card.classList.add(snowClasses[i % 3]);
       this.grid.appendChild(card);
     }
     this.counter.textContent = `${list.length} von ${all.length} Veranstaltungen`;

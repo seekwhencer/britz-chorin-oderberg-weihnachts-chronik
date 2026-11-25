@@ -65,13 +65,16 @@ export class HomeView {
       <section class="home-highlights" aria-labelledby="highlights-title">
         <h2 class="section-title" id="highlights-title">Höhepunkte</h2>
         <div class="highlight-grid">
-          ${highlights.map((h) => `
-            <article class="xmas-card highlight-card" data-reveal>
+          ${highlights.map((h, i) => {
+            const snow = ["xmas-card--snow", "xmas-card--snow-left", "xmas-card--snow-right"][i % 3];
+            return `
+            <article class="xmas-card highlight-card ${snow}" data-reveal>
               <h3 class="highlight-card__titel">${this.esc(h.titel)}</h3>
               <p class="highlight-card__text">${this.esc(h.text)}</p>
               <a class="xmas-btn xmas-btn-gold highlight-card__cta" href="${h.href}">${this.esc(h.cta)}</a>
             </article>
-          `).join("")}
+          `;
+          }).join("")}
         </div>
       </section>
 

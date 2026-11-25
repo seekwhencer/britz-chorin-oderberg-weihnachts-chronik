@@ -26,7 +26,7 @@ export class QuellenView {
         <p class="view__lead">Alle Angaben stammen ausschließlich aus den indexierten Dokumenten.</p>
       </header>
 
-      <section class="xmas-card quellen-card" data-reveal>
+      <section class="xmas-card quellen-card xmas-card--snow" data-reveal>
         <h2 class="quellen-card__title">Datenquelle</h2>
         <p>${this.esc(meta.quelle)}.</p>
         <p>Arbeitsgrundlage ist die Zusammenstellung <code>weihnachten-in-britz-chronologie.md</code>. Namen, Daten und Zitate wurden 1:1 übernommen. Wo die Quelle unsicher ist, werden beide Varianten abgebildet.</p>

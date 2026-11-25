@@ -150,7 +150,11 @@ export class ChronikView {
     const wrap = document.createElement("div");
     wrap.className = `timeline__card timeline__card--${side}`;
     wrap.setAttribute("data-reveal", "");
-    wrap.appendChild(EventCard.render(event, this.chronik));
+    const card = EventCard.render(event, this.chronik);
+    if (index % 3 === 0) card.classList.add("xmas-card--snow");
+    else if (index % 3 === 1) card.classList.add("xmas-card--snow-left");
+    else card.classList.add("xmas-card--snow-right");
+    wrap.appendChild(card);
     return wrap.outerHTML;
   }
 
