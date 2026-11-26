@@ -15,7 +15,7 @@
   bottom: 0;
   width: 2px;
   transform: translateX(-50%);
-  background: linear-gradient(180deg, var(--xmas-gold-accent), var(--xmas-green-primary));
+  background: linear-gradient(180deg, var(--xmas-gold-accent), var(--xmas-green-primary), transparent);
 }
 
 .timeline__year {

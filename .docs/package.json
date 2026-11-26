@@ -1,0 +1,15 @@
+{
+  "name": "xmas-history-docs",
+  "version": "1.0.0",
+  "description": "Screenshots für die Weihnachtszeit in Britz Website",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "shot.js",
+  "scripts": {
+    "screenshots": "node ./shot.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

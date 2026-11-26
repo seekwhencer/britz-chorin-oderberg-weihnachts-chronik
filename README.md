@@ -2,6 +2,10 @@
 
 Eine interaktive Chronik der Advents- und Weihnachtszeit in Britz und dem Amt Britz-Chorin-Oderberg, 2009–2026 — Adventsfeste, Weihnachtsmärkte, Konzerte, Seniorenfeiern und Traditionen.
 
+> [https://seekwhencer.github.io/britz-chorin-oderberg-weihnachts-chronik/](https://seekwhencer.github.io/britz-chorin-oderberg-weihnachts-chronik/)
+
+![Chronik-Seite im Nacht-Theme](.docs/screenshots/chronik-dark.png)
+
 Statische Single-Page-App ohne Build-Step und ohne Frameworks: Vanilla-JS (ES-Modules, Klassen), nummerierte CSS-Partials, Daten als JSON. Lauffähig auf GitHub Pages oder jedem statischen Host.
 
 ## Features
@@ -14,37 +18,6 @@ Statische Single-Page-App ohne Build-Step und ohne Frameworks: Vanilla-JS (ES-Mo
 - **Quellen** (`#/quellen`) — Quellen, Methodik, Stand
 - Nacht-/Tag-Theme, Schneefall, Lichterkette, Scroll-Reveal — jeweils mit `prefers-reduced-motion`-Fallback
 - Hash-Routing (teilbare URLs, funktioniert ohne Server-Rewrites)
-
-## Tech-Stack
-
-| Baustein | Umsetzung |
-|----------|-----------|
-| Frontend | Vanilla-JS ES-Modules (Klassen), kein Bundler, kein Framework |
-| Styling | `css/main.css` mit `@import`-Liste, nummerierte Partials `01`–`07` |
-| Daten | `public/data/*.json` (meta, kategorie, events, akteure, traditionen) |
-| Dev-Server | Express (`server.js`), Port `2412` |
-| Deployment | GitHub Pages (`.github/workflows/deploy.yml`, Deploy-Root `public/`) |
-| Runtime | Node.js ≥ 18 |
-
-## Projektstruktur
-
-```
-xmas-history/
-├── public/                          ← deploybare Website (Root für GH Pages)
-│   ├── index.html                   ← App-Shell
-│   ├── css/                         ← main.css + Partials 01–07
-│   ├── js/
-│   │   ├── main.js                  ← Einstiegspunkt
-│   │   ├── core/                    ← App, Router, Store, EventBus, Reveal
-│   │   ├── ui/                      ← Snowfall, Modal, Countdown, …
-│   │   ├── views/                   ← Home, Chronik, Events, Akteure, Traditionen, Quellen
-│   │   └── data/loader.js           ← lädt public/data/*.json
-│   └── data/                        ← meta, kategorie, events, akteure, traditionen
-├── server.js                        ← Express-Server für die lokale Entwicklung
-├── weihnachten-in-britz-chronologie.md  ← Datenquelle (read-only)
-├── archive/public-v1/               ← Vorgängerversion (Referenz)
-└── .github/workflows/deploy.yml     ← Deploy nach GitHub Pages
-```
 
 ## Loslegen
 
@@ -59,24 +32,23 @@ npm start          # http://localhost:2412
 - Port über `PORT`-Umgebungsvariable änderbar (Default `2412`)
 - Alternativ: jeder statische Server in `public/` (z. B. `python3 -m http.server` in `public/`)
 
-## Daten
+## Screenshots
 
-Alle Inhalte stammen aus `weihnachten-in-britz-chronologie.md` (Amtsblatt Britz-Chorin-Oderberg, Ausgaben 2010–2026, indexiert im RAG-Archiv). Die Website liest die Daten zur Laufzeit aus `public/data/*.json`:
+Alle Screenshots liegen in `.docs/screenshots/` und werden mit `cd .docs && npm run screenshots` neu erzeugt (Tag und Nacht).
 
-| Datei | Inhalt |
-|-------|--------|
-| `meta.json` | Titel, Gemeinde, Stand, Quelle |
-| `kategorie.json` | Kategorien (Adventszeit, Märkte, Musik, …) |
-| `events.json` | alle Veranstaltungen 2009–2026 (inkl. geplanter Termine) |
-| `akteure.json` | Organisationen & Personen |
-| `traditionen.json` | wiederkehrende Bräuche |
-
-Neue Events = Eintrag in `events.json` (+ ggf. `akteure.json`/`traditionen.json`), keine Code-Änderung.
-
-## Deployment
-
-Push auf `main` deployt automatisch den `public/`-Ordner auf GitHub Pages (`.github/workflows/deploy.yml`). Hash-Routing benötigt keine Server-Konfiguration.
+| Tag (Light) | Nacht (Dark) |
+|-------------|--------------|
+| ![Start — Tag](.docs/screenshots/start-light.png) | ![Start — Nacht](.docs/screenshots/start-dark.png) |
+| ![Chronik — Tag](.docs/screenshots/chronik-light.png) | ![Chronik — Nacht](.docs/screenshots/chronik-dark.png) |
+| ![Events — Tag](.docs/screenshots/events-light.png) | ![Events — Nacht](.docs/screenshots/events-dark.png) |
+| ![Akteure — Tag](.docs/screenshots/akteure-light.png) | ![Akteure — Nacht](.docs/screenshots/akteure-dark.png) |
+| ![Traditionen — Tag](.docs/screenshots/traditionen-light.png) | ![Traditionen — Nacht](.docs/screenshots/traditionen-dark.png) |
+| ![Quellen — Tag](.docs/screenshots/quellen-light.png) | ![Quellen — Nacht](.docs/screenshots/quellen-dark.png) |
 
 ## Lizenz
 
 Inhalte: Gemeinde Britz · Amt Britz-Chorin-Oderberg (Quellen: Amtsblatt, RAG-Archiv).
+
+## KI-Hinweis
+
+- Gemacht mit lokaler KI
